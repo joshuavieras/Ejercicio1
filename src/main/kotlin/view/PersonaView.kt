@@ -14,11 +14,7 @@ fun Pedirdatos():Persona{
     println("Ingrese la edad de "+nombre+" :")
     var edad = Integer.valueOf(readLine())
     println("Ingrese el sexo de "+nombre+" :")
-
     var sexo = readLine()!![0]
-    if(!pc.combrobarSexo(sexo)){
-        sexo='H'
-    }
     println("Ingrese el peso de "+nombre+" :(Utilice la coma para los decimales)")
     var peso =  read.nextFloat()
     println("Ingrese la altura de "+nombre+" (Utilice la coma para los decimales):")

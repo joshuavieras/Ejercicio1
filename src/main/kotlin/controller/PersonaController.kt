@@ -1,7 +1,7 @@
 package controller
 import model.Persona
 class PersonaController (){
-    
+
     fun CalcularIMC(persona:Persona): Int {
         var pesoideal = (persona.peso) / (persona.altura  * persona.altura)
         if(persona.peso<pesoideal){
@@ -18,11 +18,9 @@ class PersonaController (){
             return false
         }
     }
-    fun combrobarSexo(sexo:Char):Boolean{
-        if(sexo!='H'||sexo!='M'){
-            return false
-        }else{
-            return true
+    fun combrobarSexo(persona:Persona){
+        if(persona.sexo!='H'||persona.sexo!='M'){
+            persona.sexo='H'
         }
     }
     fun ToString(persona:Persona):String{
